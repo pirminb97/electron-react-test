@@ -14,6 +14,7 @@ class MainWindow extends BrowserWindow {
       resizable: false,
       webPreferences: {
         nodeIntegration: true,
+        backgroundThrottling: false,
       },
     });
     this.loadURL(url);
